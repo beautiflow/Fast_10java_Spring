@@ -1,4 +1,4 @@
-package Chapter_01.ch07;
+package Part_01_Java.Chapter_01.ch07;
 
 public class DoubleTest {
     public static void main(String[] args) {

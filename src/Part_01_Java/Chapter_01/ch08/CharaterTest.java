@@ -1,4 +1,4 @@
-package Chapter_01.ch08;
+package Part_01_Java.Chapter_01.ch08;
 
 public class CharaterTest {
     public static void main(String[] args) {
