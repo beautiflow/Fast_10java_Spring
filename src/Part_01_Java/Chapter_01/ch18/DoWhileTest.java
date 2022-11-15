@@ -10,13 +10,11 @@ public class DoWhileTest {
         int input;
         int sum = 0;
 
-        input = scanner.nextInt();
-
-        while( input != 0 ){
-
-            sum += input;
+        do {
             input = scanner.nextInt();
-        }
+            sum += input;
+        }while( input != 0 );
+
         System.out.println(sum);
     }
 }
