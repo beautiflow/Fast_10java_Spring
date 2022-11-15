@@ -8,6 +8,7 @@ public class LogicalTest {
 
         boolean value = ( (num1 = num1 + 10) < 10) && ( (i = i +2 ) < 10);
         // boolean value = ( (num1 = num1 + 10) < 10) || ( (i = i +2 ) < 10);
+        // boolean value = ( (num1 + 10) < 10) || ( (i = i +2 ) < 10);
 
         System.out.println(value);
         System.out.println(num1);
