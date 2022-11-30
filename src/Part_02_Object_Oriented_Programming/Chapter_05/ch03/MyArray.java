@@ -8,10 +8,14 @@ public class MyArray {
     public int ARRAY_SIZE;
     public static final int ERROR_NUM = -999999999;
 
-    public MyArray(){
+    public MyArray(int size){
         count = 0;
         ARRAY_SIZE = 10;
         intArr = new int[ARRAY_SIZE];
+    }
+
+    public MyArray() {
+
     }
 
     public void addElement(int num){
