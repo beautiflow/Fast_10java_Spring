@@ -1,6 +1,6 @@
-package Part_02.Chapter_05.ch07;
+package Part_02.Chapter_05.ch08;
 
-public class GenericPrinter <T>{
+public class GenericPrinter < T extends Material>{
 
     private T material; // T 자료형으로 선언한 변수
 
