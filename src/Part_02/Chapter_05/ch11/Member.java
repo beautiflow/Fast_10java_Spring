@@ -27,7 +27,7 @@ public class Member {
     }
 
     @Override
-    public String toString(){
+    public String toString(){ // toString 메소드 오버로딩
         return memberName + " 회원님의 아이디는 " + memberId + "입니다.";
     }
 }
