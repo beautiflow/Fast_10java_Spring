@@ -5,25 +5,25 @@ import java.util.Iterator;
 
 public class MemberHashSet {
 
-    private HashSet<Member> hashSet; // ArrayList 선언
+    private HashSet<Member> hashSet;
 
     public MemberHashSet(){
-        hashSet = new HashSet<Member>();  // 멤버로 선언한 ArrayList 생성
+        hashSet = new HashSet<Member>();
     }
 
-    public void addMember(Member member){  // ArrayList 에 멤버 추가
+    public void addMember(Member member){
         hashSet.add(member);
     }
 
-    public boolean removeMember(int memberId){ // 멤버 아이디를 매개변수로, 삭제 여부를 반환
+    public boolean removeMember(int memberId){
 
-       /* for(int i = 0; i<hashSet.size(); i++){  // 해당 아이디를 가진 멤버를 ArrayList 에서 찾음
+       /* for(int i = 0; i<hashSet.size(); i++){
             Member member = hashSet.get(i);
 
             int tempId = member.getMemberId();
-            if(tempId == memberId){  // 멤버아이디가 매개 변수와 일치하면
-                hashSet.remove(i);  // 해당 멤버를 삭제
-                return true;          // true 반환
+            if(tempId == memberId){
+                hashSet.remove(i);
+                return true;
             }
         }*/
 
@@ -31,13 +31,13 @@ public class MemberHashSet {
         while (ir.hasNext()){
             Member member = ir.next();
             int tempId = member.getMemberId();
-            if(tempId == memberId){         // 멤버아이디가 매개변수와 일치하면
-                hashSet.remove(member);   // 해당 멤버를 삭제
-                return true;                // true 반환
+            if(tempId == memberId){
+                hashSet.remove(member);
+                return true;
             }
         }
 
-        System.out.println(memberId + "가 존재하지 않습니다."); // for 가 끝날 때까지 return이 안된 경우
+        System.out.println(memberId + "가 존재하지 않습니다.");
         return false;
     }
 
