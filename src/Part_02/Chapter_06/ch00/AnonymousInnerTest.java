@@ -5,19 +5,16 @@ class Outer2{
     int outNum = 100;
     static int sNum = 200;
 
-
-    Runnable getRunnable( int i){
+    Runnable getRunnable( int i ){
 
         int num = 10;
 
-
-        class MyRunnable implements Runnable{
+        return new Runnable() {
 
             int localNum = 1000;
 
             @Override
             public void run() {
-
                 System.out.println("i = " + i);
                 System.out.println("num = " + num);
                 System.out.println("localNum = " + localNum);
@@ -26,9 +23,17 @@ class Outer2{
                 System.out.println("Outter.sNum = " + Outer2.sNum + "(외부 클래스 정적 변수)");
 
             }
-        }
-        return new MyRunnable();
+        };
     }
+
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+
+            System.out.println("Runnable class");
+
+        }
+    };
 }
 
 public class AnonymousInnerTest {
@@ -38,6 +43,8 @@ public class AnonymousInnerTest {
         Runnable runner = out.getRunnable(100);
 
         runner.run();
+
+        out.runnable.run();
 
     }
 }
