@@ -20,4 +20,12 @@ public class Subject {
     public void setScorePoint(int scorePoint) {
         this.scorePoint = scorePoint;
     }
+
+    public String getSubjectName() {
+        return null;
+    }
+
+    public int getSubjectId() {
+        return 0;
+    }
 }
